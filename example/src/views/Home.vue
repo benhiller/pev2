@@ -1,11 +1,6 @@
 <template>
   <main-layout>
   <div class="container">
-    <div class="alert alert-warning">
-      This is the demo application for <a href="https://github.com/dalibo/pev2">PEV2</a>. It is serverless and doesn't store your plans.
-      <br>
-      Please consider using <a href="https://explain.dalibo.com">explain.dalibo.com</a> instead if you want to save or share your plans.
-    </div>
     <div class="row">
       <div class="col d-flex">
         <div class="text-muted">
@@ -13,21 +8,11 @@
           <br>
           <em>psql</em> users can export the plan to a file using <code>psql -XqAt -f explain.sql > analyze.json</code>
         </div>
-        <div class="dropdown ml-auto">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sample Plans
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a v-for="(sample, index) in samples" class="dropdown-item" v-on:click.prevent="loadSample(sample)" href>
-              {{ sample[0] }}
-            </a>
-          </div>
-        </div>
       </div>
     </div>
     <form v-on:submit.prevent="submitPlan">
       <div class="form-group">
-        <label for="planInput">Plan <span class="small text-muted">(text or JSON)</span></label>
+        <label for="planInput">Plan <span class="small text-muted">(JSON)</span></label>
         <textarea :class="['form-control', draggingPlan ? 'dropzone-over' : '']" id="planInput" rows="8" v-model="planInput" @dragenter="draggingPlan = true" @dragleave="draggingPlan = false" @drop.prevent="handleDrop" placeholder="Paste execution plan\nOr drop a file"></textarea>
       </div>
       <div class="form-group">

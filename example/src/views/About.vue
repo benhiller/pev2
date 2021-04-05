@@ -1,5 +1,5 @@
 <template>
-  <main-layout>
+  <main-layout is-about>
   <div class="container">
     <h2>
       Disclaimer
