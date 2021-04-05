@@ -1,6 +1,6 @@
 <template>
   <main-layout>
-  <div class="container">
+  <div class="form-container container">
     <div class="row">
       <div class="col d-flex">
         <div class="text-muted">
@@ -112,5 +112,8 @@ export default class Home extends Vue {
 .dropzone-over {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
+}
+.form-container {
+  margin-top: 8px;
 }
 </style>
