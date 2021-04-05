@@ -5,11 +5,11 @@
       Disclaimer
     </h2>
     <p>
-      This project is a rewrite of the excellent <a href="https://github.com/AlexTatiyants/pev">Postgres Explain Visualizer (pev)</a>. Kudos go to Alex Tatiyants.
+      This project is a fork of a rewrite of the excellent <a href="https://github.com/AlexTatiyants/pev">Postgres Explain Visualizer (pev)</a>. Kudos go to Alex Tatiyants and Dalibo. I forked it to add a pretty rudimentary and non-ideal way to share query plans via the URL.
     </p>
 
     <p>
-    The pev project was initialy written in early 2016 but seem to be abandonned since then. There was no activity at all for more than <a href="https://github.com/AlexTatiyants/pev/issues/42">3 years and counting</a> though there are <a href="https://github.com/AlexTatiyants/pev/issues">several issues open</a> and relevant pull requests pending.
+    The pev project was initialy written in early 2016 but seem to be abandoned since then. There was no activity at all for more than <a href="https://github.com/AlexTatiyants/pev/issues/42">3 years and counting</a> though there are <a href="https://github.com/AlexTatiyants/pev/issues">several issues open</a> and relevant pull requests pending.
     </p>
 
 
@@ -47,9 +47,6 @@
     <p>
     To get the most out of it, we recommend generating a query plan using the following line: <code>EXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)</code>. It is recommend submitting a (decently formatted) SQL query that generated the plan.
     </p>
-    <p>
-      PEV2 can also parse text although the JSON format usually has better support.
-    </p>
 
     <h2>
       Help improve PEV2
@@ -59,7 +56,7 @@
     </p>
 
     <p>
-    Report issues or contribute to the code on <a href="https://github.com/dalibo/pev2">Github</a>.
+    Report issues or contribute to the code on <a href="https://github.com/benhiller/pev2">Github</a> (forked repo).
     </p>
 
     <hr>

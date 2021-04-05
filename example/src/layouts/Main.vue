@@ -2,7 +2,7 @@
   <div class="d-flex flex-column vh-100">
     <div class="btn-container">
       <div class="navbar container flex-shrink-0">
-        Postgres Query Visualizer
+        Postgres Explain Visualizer
         <button v-if="isPlan && hasShared" class="btn btn-primary ml-auto" disabled>Copied to Clipboard</button>
         <button v-if="isPlan && !hasShared" class="btn btn-primary ml-auto" v-on:click="share">Share</button>
         <v-link v-if="isPlan || isAbout" :class="{'btn btn-secondary': true, 'ml-auto': isAbout}" to="/">New Plan</v-link>
